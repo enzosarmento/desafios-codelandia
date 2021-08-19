@@ -59,15 +59,22 @@ header {
 
 }
 
+.search input:focus {
+  border: 0;
+}
+
 .search input::placeholder {
   text-indent: 2.375rem;
+  -moz-text-indent: 2.375rem;
   color: var(--text);
+  font-size: 0.875rem;
 }
 
 .search img {
+  width: 1.25rem;
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 10px;
+  left: 10px;
 }
 
 /* ====== POSTS ====== */
@@ -81,6 +88,7 @@ header {
 
   background-color: var(--white);
   border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
   padding: 1rem;
 
 }
