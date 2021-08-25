@@ -226,6 +226,9 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     gap: 7rem;
+
+    margin-top: 9.375rem;
+    margin-bottom: 9.375rem;
   }
 
   .cards {
