@@ -1,0 +1,160 @@
+/* ======= GLOBAL/RESET ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+
+:root {
+  --bg-image: #f7fafc;
+  --bg-body: #ffffff;
+
+  --bg-button: #04c45c;
+  --color-pattern: #1a202c;
+  --color-button: #ffffff;
+  --link: #2b6cb0;
+}
+
+.dark {
+  --bg-body: #3b3b3b;
+  --color-pattern: #ffffff;
+  --color-button: #1a202c;
+}
+
+.container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#application {
+  background: var(--bg-body);
+}
+
+a {
+  color: var(--link);
+}
+
+/* ======= DESKTOP PERSONS IMAGE ======= */
+
+#image {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* ======= LOGIN ======= */
+
+.text {
+  font-family: "Merriweather", sans-serif;
+  color: var(--color-pattern);
+
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.text .theme {
+  text-align: end;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.text .theme img {
+  width: 24px;
+  height: 24px;
+}
+
+.text h1 {
+  font-size: 1.625rem;
+}
+
+.text p {
+  font-size: 1rem;
+}
+
+form label {
+  display: block;
+
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: var(--color-pattern);
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  height: 3.125rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  text-indent: 1.25rem;
+  font-family: "Lato", sans-serif;
+}
+
+.help {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 1.75rem;
+  margin-bottom: 1.625rem;
+
+  font-family: "Lato", sans-serif;
+}
+
+.help div {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.help small {
+  color: var(--color-pattern);
+}
+
+.login-form button {
+  width: 100%;
+  height: 3.125rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.enter {
+  background-color: var(--bg-button);
+  color: white;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+
+  margin-bottom: 0.95rem;
+}
+
+.google {
+  position: relative;
+  background-color: var(--color-pattern);
+  text-align: center;
+  color: var(--color-button);
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.login-form p {
+  margin-top: 8.625rem;
+  padding-bottom: 3.25rem;
+  text-align: center;
+
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+.login-form p span {
+  color: var(--color-pattern);
+}

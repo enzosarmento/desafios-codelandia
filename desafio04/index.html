@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Scripts -->
+    <script src="vendor/vue.js"></script>
+
+</head>
+<body>
+    <div id="application" class="">
+        <main>
+            <section class="container">
+                <section id="image">
+                    <img src="assets/images/persons.png" alt="">
+                </section>
+                <section id="login">
+                    <div class="text">
+                        <div class="theme">
+                            <img @click="darkMode()" :src="theme" alt="">
+                        </div>
+                        <p>
+                            Bem-vindo de volta
+                        </p>
+                        <h1>Faça login na sua conta</h1>
+                    </div>
+                    <div class="login-form">
+                        <form action="">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="enzosarmento91@gmail.com">
+        
+                            <label for="password">Senha</label>
+                            <input type="password" placeholder="************">
+                            <div class="help">
+                                <div>
+                                    <input type="checkbox">
+                                    <small>Lembre de mim</small>
+                                </div>
+                                <small><a href="#">Esqueceu sua senha?</a></small>
+                            </div>
+                            <button class="enter">Entrar</button>
+                            <button class="google">
+                                <img src="assets/images/google.png" alt="Logo Google">
+                                <span>
+                                    Ou faça login com o Google
+                                </span>
+                            </button>
+                        </form>
+                        <p>
+                            <span>
+                                Não tem uma conta?
+                            </span>
+                            <a href="#">Cadastre-se</a>
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
