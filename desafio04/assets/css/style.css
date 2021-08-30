@@ -42,6 +42,10 @@ main {
   height: 100vh;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* ======= DESKTOP PERSONS IMAGE ======= */
 
 #image {
@@ -167,6 +171,10 @@ form input[type="password"] {
 
 /* ======= RESPONSIVE ======= */
 @media (min-width: 1022px) {
+  body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
   .container {
     display: flex;
   }
