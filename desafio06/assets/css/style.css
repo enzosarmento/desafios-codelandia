@@ -1,0 +1,158 @@
+/* ======= GLOBAL/RESET ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --button-blue: #0072d2;
+  --button-black: #131318;
+  --text-color: #ffffff;
+}
+
+body {
+  font-family: "B612", sans-serif;
+  overflow: hidden;
+}
+
+.background img {
+  position: absolute;
+  z-index: -2;
+  width: 100vw;
+}
+
+.background::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.container {
+  margin-left: 23rem;
+  margin-right: 23rem;
+}
+
+/* ======= TITLES ======= */
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.titles h2 {
+  padding-top: 4.5rem;
+  font-size: 2rem;
+}
+
+.titles h1 {
+  font-size: 9.6rem;
+}
+
+/* ======= INFOS ======= */
+
+.poster {
+  grid-area: poster;
+}
+.text {
+  grid-area: texto;
+}
+.rating {
+  grid-area: rating;
+}
+.buttons {
+  grid-area: buttons;
+}
+
+.infos {
+  margin-top: 8.5rem;
+  max-width: 1200px;
+  display: grid;
+
+  grid-template-areas:
+    "poster texto texto texto"
+    "poster rating rating rating"
+    "poster buttons buttons buttons";
+
+  gap: 7.3rem;
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.rating span {
+  color: var(--text-color);
+  font-size: 2.4rem;
+}
+
+.rating span:last-child {
+  margin-left: 9.5rem;
+}
+
+.stars {
+  display: flex;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 2.5rem;
+  height: 8rem;
+}
+
+.buttons a {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+
+  height: 5rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.buttons a:first-child {
+  background-color: var(--button-blue);
+  transition: 0.3s;
+}
+
+.buttons a:first-child:hover {
+  background-color: var(--button-black);
+}
+
+.buttons a:last-child {
+  background-color: var(--button-black);
+  border: 1px solid #ffff;
+  transition: .3s;
+}
+
+.buttons a:last-child:hover {
+  background-color: transparent;
+  border: 1px solid #ffff;
+}
+
+@media (max-width: 1370px) {
+  .infos {
+    margin-top: 1rem;
+  }
+}

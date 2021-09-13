@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loki</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+    <div id="app">
+        <main>
+            <div class="background">
+                <img :src="background" alt="">
+            </div>
+            <section class="titles">
+                <h2>Está disponível agora!</h2>
+                <h1>Loki</h1>
+            </section>
+            <section class="infos container">
+                <div class="poster">
+                    <img src="assets/images/capa.png" alt="Poster Série Loki">
+                </div>
+                <div class="text">
+                    <p>
+                        Em “Loki” da Marvel Studios, o vilão mercurial Loki (Tom Hiddleston) retoma seu papel como o Deus do Mal em uma nova
+                        série que ocorre após os eventos de “Vingadores: Endgame”.
+                    </p>
+                </div>
+                <div class="rating">
+                    <span><img src="assets/images/clock.svg" alt="Ícone de um Relógio"> 51min</span>
+                    <div class="stars" id="stars" @click="rating($event)">
+                        <img :src="star.star1" alt="a"><img :src="star.star2" alt="b"><img :src="star.star3" alt="c"><img :src="star.star4" alt="d"><img :src="star.star5" alt="e">
+                    </div>
+                    <span>2021</span>
+                </div>
+                <div class="buttons">
+                    <a href="#">Assistir agora</a>
+                    <a href="#">Trailer</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="vendor/vue.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
